@@ -6,11 +6,12 @@ import {
   onAuthStateChanged,
   signInWithPopup,
   signOut,
+  User,
 } from "firebase/auth";
 import { googleProvider } from "@/db/db";
 
 interface AuthContextType {
-  user: any | null;
+  user: User | null;
   setUser: React.Dispatch<React.SetStateAction<any | null>>;
   modalLogin: boolean;
   setModalLogin: React.Dispatch<React.SetStateAction<boolean>>;
@@ -36,7 +37,7 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
-  const [user, setUser] = useState<any | null>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [modalLogin, setModalLogin] = useState(false);
   // Verificar el estado de la autenticación al cargar la app
   useEffect(() => {

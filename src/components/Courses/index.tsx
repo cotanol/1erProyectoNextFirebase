@@ -10,6 +10,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface CoursesPageProps {
   courses: Course[];
@@ -253,11 +254,12 @@ export const CoursesPage = ({ courses }: CoursesPageProps) => {
                     href={`courses/${course.id}`}
                     className="flex flex-col md:flex-row gap-6"
                   >
-                    <div className="md:w-48">
-                      <img
+                    <div className="md:w-48 w-full h-32 relative">
+                      <Image
                         src={course.image}
                         alt={course.title}
-                        className="w-full h-32 object-cover rounded-lg"
+                        fill
+                        className="object-cover rounded-lg"
                       />
                     </div>
                     <div className="flex-1">

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { CartItem, Course } from "@/types/course";
 import { useShoppingCart } from "@/context/ShoppingCartContext";
+import Image from "next/image";
 
 interface CourseDetailProps {
   course: Course;
@@ -33,16 +34,19 @@ export const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto p-6">
+    <div className="container mx-auto p-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
         {/* Imagen y Detalles del Libro */}
         <div className="space-y-4">
           <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <img
-              src={course.image}
-              alt={course.title}
-              className="w-full h-auto rounded-lg"
-            />
+            <div className="w-full h-60 md:h-72 lg:h-96 relative ">
+              <Image
+                src={course.image}
+                alt={course.title}
+                fill
+                className="rounded-lg object-cover"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -203,11 +207,15 @@ export const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
         <div className="space-y-6">
           <div className="border-b pb-6">
             <div className="flex items-center mb-2">
-              <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=50"
-                alt="Reviewer"
-                className="w-10 h-10 rounded-full mr-3"
-              />
+              <div className="relative w-10 h-10">
+                <Image
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=50"
+                  alt="Reviewer"
+                  fill
+                  className="rounded-full mr-3"
+                />
+              </div>
+
               <div>
                 <h4 className="font-semibold">John Doe</h4>
                 <div className="flex items-center">

@@ -32,7 +32,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ onClose }) => {
         </button>
 
         <div className="text-center text-sm text-gray-600 mt-4">
-          Don't have an account?{" "}
+          Do not have an account?{" "}
           <a href="#" className="text-blue-600 hover:text-blue-800">
             Sign up
           </a>
