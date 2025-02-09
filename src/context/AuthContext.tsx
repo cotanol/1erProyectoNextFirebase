@@ -12,7 +12,7 @@ import { googleProvider } from "@/db/db";
 
 interface AuthContextType {
   user: User | null;
-  setUser: React.Dispatch<React.SetStateAction<any | null>>;
+  setUser: React.Dispatch<React.SetStateAction<User | null>>;
   modalLogin: boolean;
   setModalLogin: React.Dispatch<React.SetStateAction<boolean>>;
 
