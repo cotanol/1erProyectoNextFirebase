@@ -82,8 +82,8 @@ const ContactPage = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl font-bold text-white mb-6">Get in Touch</h1>
             <p className="text-xl text-white/90">
-              Have questions? We'd love to hear from you. Send us a message and
-              we'll respond as soon as possible.
+              Have questions? We would love to hear from you. Send us a message
+              and we will respond as soon as possible.
             </p>
           </div>
         </div>
@@ -244,7 +244,7 @@ const ContactPage = () => {
                 </h3>
                 <p className="text-gray-600">
                   Yes, we offer a 30-day money-back guarantee for all our
-                  courses. If you're not satisfied, simply contact our support
+                  courses. If you are not satisfied, simply contact our support
                   team.
                 </p>
               </div>

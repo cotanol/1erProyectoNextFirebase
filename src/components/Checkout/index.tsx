@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { CreditCard, Lock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useShoppingCart } from "@/context/ShoppingCartContext";
@@ -8,6 +8,7 @@ import { useShoppingCart } from "@/context/ShoppingCartContext";
 export const Checkout = () => {
   const { cartItems } = useShoppingCart();
   const router = useRouter();
+  /*
   const [formData, setFormData] = useState({
     email: "",
     cardName: "",
@@ -17,6 +18,7 @@ export const Checkout = () => {
     country: "",
     postalCode: "",
   });
+  */
 
   const subtotal = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -28,7 +30,7 @@ export const Checkout = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     //TODO: Handle payment processing
-    console.log("Processing payment:", formData);
+    // console.log("Processing payment:", formData);
     //TODO: Clear cart and redirect to success page
     router.push("/");
   };

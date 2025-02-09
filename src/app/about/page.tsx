@@ -56,7 +56,7 @@ const AboutPage = () => {
               Transforming Lives Through Education
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              We're on a mission to democratize education and empower learners
+              We are on a mission to democratize education and empower learners
               worldwide. Our platform brings together passionate educators and
               curious minds, creating a vibrant community where knowledge knows
               no bounds.
@@ -116,7 +116,7 @@ const AboutPage = () => {
                 methodologies to deliver an unparalleled learning experience.
               </p>
               <p className="text-gray-600">
-                Today, we're proud to be at the forefront of online education,
+                Today, we are proud to be at the forefront of online education,
                 continuously innovating to meet the evolving needs of our global
                 learning community. Our success is measured not just in numbers,
                 but in the countless success stories of our students who have
