@@ -83,7 +83,7 @@ const Header = () => {
                   key={path}
                   href={path}
                   className={`text-gray-700 hover:text-blue-600 ${
-                    location.pathname === path ? "text-blue-600" : ""
+                    pathname === path ? "text-blue-600" : ""
                   }`}
                 >
                   {label}
