@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        body: ["var(--font-body)"],
+        heading: ["var(--font-heading)"],
+      },
     },
   },
   plugins: [],
