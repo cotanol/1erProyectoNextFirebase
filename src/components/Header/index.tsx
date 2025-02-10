@@ -77,7 +77,7 @@ const Header = () => {
           </div>
 
           <div className="flex items-center space-x-6">
-            <nav className=" md:flex space-x-8">
+            <nav className="hidden md:flex space-x-8">
               {navLinks.map(({ path, label }) => (
                 <Link
                   key={path}
