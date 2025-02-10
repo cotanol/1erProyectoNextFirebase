@@ -77,13 +77,15 @@ const Header = () => {
           </div>
 
           <div className="flex items-center space-x-6">
-            <nav className="hidden md:flex space-x-8">
+            <nav className=" md:flex space-x-8">
               {navLinks.map(({ path, label }) => (
                 <Link
                   key={path}
                   href={path}
-                  className={`text-gray-700 hover:text-blue-600 ${
-                    pathname === path ? "text-blue-600" : ""
+                  className={`${
+                    pathname === path
+                      ? "text-blue-600"
+                      : "text-gray-700 hover:text-blue-600"
                   }`}
                 >
                   {label}
@@ -131,13 +133,15 @@ const Header = () => {
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </form>
-              <nav className="hidden md:flex space-x-8">
+              <nav>
                 {navLinks.map(({ path, label }) => (
                   <Link
                     key={path}
                     href={path}
-                    className={`text-gray-700 hover:text-blue-600 ${
-                      pathname === path ? "text-blue-600" : ""
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${
+                      pathname === path
+                        ? "bg-blue-50 text-blue-600"
+                        : "text-gray-700 hover:bg-gray-50 hover:text-blue-600"
                     }`}
                   >
                     {label}
